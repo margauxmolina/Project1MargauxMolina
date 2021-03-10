@@ -42,8 +42,8 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
 | web 1.1  |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| web 2.2  |          |            |                  |
+| web 3.3  |          |            |                  |
 
 ### Access Policies
 
