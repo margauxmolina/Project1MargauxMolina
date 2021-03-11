@@ -60,10 +60,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | no                  | 98.225.153.59        |
+| Jump Box | yes                 | 98.225.153.59        |
 | web 1.1  | no                  | 10.0.0.4             |
 | web 2.2  | no                  | 10.0.0.4             |
 | web 3.3  | no                  | 10.0.0.4             |
+|elk-web-vm| yes                 | 98.225.153.59        |
 
 ### Elk Configuration
 
@@ -72,7 +73,7 @@ What is the main advantage of automating configuration with Ansible?_
 ansible allows a single person to deploy the same configuration across multiple devices quickly with out the risk of human error. 
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - install docker
 - download ansible
 - configure elk-playbook.yaml 
