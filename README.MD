@@ -28,7 +28,7 @@ authenticate user access: the load balancer can request a username and password 
 protect against DDoS attack: the load balancer can request a username and password before granting access to your website to protect against unauthorized access.
 Simplify PCI compliance: if you process credit carrds, you need to comply with Payment Card Industry (PCI) regulations. a load balancer simplifies compliance with PCI rules.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the Logs and system Traffic.
 What does Filebeat watch for?
 filebeat monitors the log files or locations that you specify, collects log events, and fowards them either to elasticlog or logstash for indexing.
 
@@ -41,10 +41,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| web 1.1  |          |            |                  |
-| web 2.2  |          |            |                  |
-| web 3.3  |          |            |                  |
-
+| web 1.1  |web server| 10.0.0.6   | Linux            |
+| web 2.2  |web server| 10.0.0.7   | Linux            |
+| web 3.3  |web server| 10.0.0.9   | Linux            |
+|red-elk-vm|elk server| 10.1.0.4   | Linux            |
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
@@ -85,13 +85,14 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+-List the IP addresses of the machines you are monitoring_
 - 10.0.0.6
 - 10.0.0.7
 - 10.0.0.9
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+-Specify which Beats you successfully installed_
+filebeat
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
