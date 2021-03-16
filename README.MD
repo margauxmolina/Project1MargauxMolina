@@ -53,21 +53,21 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the jump box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-98.225.153.59
+98.225.xxx.xx
 
 Machines within the network can only be accessed by .
 Which machine did you allow to access your ELK VM? What was its IP address?_
-98.225.153.59
+98.225.xxx.xx
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | yes                 | 98.225.153.59        |
+| Jump Box | yes                 | 98.225.xxx.xx        |
 | web 1.1  | no                  | 10.0.0.4             |
 | web 2.2  | no                  | 10.0.0.4             |
 | web 3.3  | no                  | 10.0.0.4             |
-|elk-web-vm| yes                 | 98.225.153.59        |
+|elk-web-vm| yes                 | 98.225.xxx.xx        |
 
 ### Elk Configuration
 
